@@ -1,16 +1,13 @@
 {
-  "name": "websee",
-  "version": "1.0.0",
+  "name": "@ervarunsharma/websee",
+  "version": "1.0.2",
+  "description": "A package for real-time filtering and searching.",
   "main": "index.js",
-  "type": "module",
   "scripts": {
-    "test": "nodemon test/websee.test.js"
+    "test": "npm run dev"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
-  "dependencies": {
-    "nodemon": "^3.1.7"
-  }
+  "keywords": ["filtering", "searching", "real-time", "websee"],
+  "author": "Your Name",
+  "license": "MIT"
 }
+

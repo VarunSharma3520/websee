@@ -1,3 +1,4 @@
+//This is a example of how to use websee.
 import { websee } from "../index.js";
 
 const data = [

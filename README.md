@@ -18,5 +18,48 @@ WebSee is a blazingly fast NPM package designed for **real-time filtering and se
 Install WebSee via NPM:
 
 ```bash
-npm install websee
+npm i @ervarunsharma/websee
+```
+
+# Usage
+
+To use WebSee, simply import it in your project and use it to search for data.
+
+```js
+import { websee } from "../index.js";
+
+const data = [
+  "foobar",
+  "foo-bar",
+  "test",
+  "Fuzzy Finder",
+  "Fuzzy-Finder",
+  "FuzzyFinder",
+  "fuzzyfinder",
+  "fuzzy-finder",
+  "maker",
+  "sinderfinder",
+  "funder-sfinder",
+  "fuzzy finder",
+  "foo bar",
+  "funder sfinder",
+  ""
+]
+
+const pattern = "furf"
+
+const option = {
+  algo: "v1",  // "v1" or "v2"
+  title: true,  // default true
+  desc: false,  // default false
+  weblink: "www.domain.com/url",  // www.domain.com/url
+  imglink: "www.cloudimage.com/url/make",  // www.cloudimage.com/url/make
+}
+
+console.log(websee(data, pattern, option))
+```
+
+# Github Contribution 
+```bash
+git clone https://github.com/VarunSharma3520/websee.git
 ```
